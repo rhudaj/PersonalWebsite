@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roman Hudaj Portoflio</title>
+  <link rel="stylesheet" href="style.css">    <!--Reference to CSS script-->
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>   <!--Font from web-->
+</head>
+<body>
+
+<!-- -----------Home----------- -->
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="images/logo.png" class="logo">
+
+      <!--Menu-->
+      <ul id="sidemenu">
+
+        <!--Home Page-->
+          <li><a href="index.html">Home</a></li>
+        <!--Art Page-->
+          <li><a href="art.html">Art</a></li>
+        <!--Projects Page-->
+          <li><a href="projects.html">Projects</a></li>
+
+        <i class="fas fa-times" onclick="closemenu()"></i> <!--X icon-->
+
+      </ul>
+
+      <i class="fas fa-bars" onclick="openmenu()"></i>    <!--menu icon-->
+
+    </nav>
+    <div class="header-text">
+      <p>CS Student and Creator</p>
+      <h1>Hello, I'm <span>Roman</span> <br> Hudaj From Toronto</h1>
+    </div>
+  </div>
+</div>
+
+<!-- -----------about----------- -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/user.png">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>I am a CS student at the University of Waterloo. I enjoy working on interesting projects. I am also a creative person. Check out my work on this site!</p>
+
+        <div class="tab-titles">
+
+          <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>   <!--2 classes in 1-->
+          <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+        </div>
+
+        <div>
+          <div class="tab-contents active-tab" id="Skills">    <!--Skills-->
+            <ul>
+              <li><span>C++</span><br>Advanced Concepts, Design Patterns, Object-Oriented</li>
+              <li><span>UI/UX</span><br>Designing Web Interfaces with HTML/CSS/Javascript</li>
+              <li><span>Project Management</span><br>Planning and working with teams</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Experience">    <!--Experience-->
+            <ul>
+              <li><span>Jan/2022-Aug/2022</span><br>Student Engineer at Martinrea International</li>
+              <li><span>Aug/2019-Aug/2021</span><br>Court Attendent at York Old Mill Tennis Club</li>
+              <li><span>Sep/2017-Aug/2019</span><br>Cashier at the Cheese Boutique</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Education">    <!--Education-->
+            <ul>
+              <li><span>2020-2025</span><br>Bachelors, Computer Science, University of Waterloo</li>
+              <li><span>2016-2020</span><br>High School Diploma, Ursula Franklin Academy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- -----------Services----------- -->
+<div id = "services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">     <!--Div's inside are a Grid-->
+      
+      <!--Grid Element 1-->
+      <div>
+        <i class="fa-solid fa-code"></i>    <!--Icon-->       
+        <h2>Web Design</h2>
+        <p>I can offer web-design</p>
+        <a href="#">Learn more</a>
+      </div>
+
+      <!--Grid Element 2-->
+      <div>
+        <i class="fa-solid fa-crop"></i>    <!--Icon-->  
+        <h2>UI/UX Design</h2>
+        <p>I can offer UI/UX Design</p>
+        <a href="#">Learn more</a>
+      </div>
+
+      <!--Grid Element 3-->
+      <div>
+        <i class="fa-brands fa-app-store-ios"></i>    <!--Icon-->  
+        <h2>Design Work</h2>
+        <p>I can offer 3D/2D Design Work</p>
+        <a href="#">Learn more</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- -----------Portfolio----------- -->
+<div id="portfolio">
+
+  <div class="container">
+
+    <h1 class="sub-title">My Work</h1>
+
+    <div class="work-list"> 
+
+      <!--Grid Item 1-->
+      <div class="work">
+        <img src="images/work-1.png">
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>App does this function</p>
+          <a href="#"> <i class="fa-solid fa-link"></i> </a>
+        </div>
+      </div>
+
+      <!--Grid Item 2-->
+      <div class="work">
+        <img src="images/work-2.png">
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>App does this function</p>
+          <a href="#"> <i class="fa-solid fa-link"></i> </a>
+        </div>
+      </div>
+
+      <!--Grid Item 3-->
+      <div class="work">
+        <img src="images/work-3.png">
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>App does this function</p>
+          <a href="#"> <i class="fa-solid fa-link"></i> </a>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="#" class="btn" >See more</a>     <!--Button-->
+
+  </div>
+
+</div>
+
+<!-- -----------Contact----------- -->
+
+<div id="contact">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="contact-left">
+
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>rhudaj@uwaterloo.ca</p>
+        <p><i class="fa-solid fa-square-phone"></i>647-502-0512</p>
+        
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/romanhudaj"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/rhudaj/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/RomanHudaj11"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <a href="CV/RomanHudaj_Resume.pdf" download class="btn btn2">Download CV</a>
+
+      </div>
+
+      <div class="contact-right">
+
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+
+        <!--Display Message-->
+        <span id="msg">Your message has been sent</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!--Script 1-->
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");    //get every element with class "tab-link"
+  var tabcontents = document.getElementsByClassName("tab-contents");  //get every element with class "tab-content"
+
+  function opentab(tabname)
+  {
+    for(tablink of tablinks)                //for every "tab-links" element
+    {
+      tablink.classList.remove("active-link");      //remove active-link
+    }
+    for(tabcontent of tabcontents)           //for every "tab-contents" element
+    {
+      tabcontent.classList.remove("active-tab");    //remove active-tab
+    }
+
+    event.currentTarget.classList.add("active-link");  //adds active link on a click
+
+    document.getElementById(tabname).classList.add("active-tab");     //tabname = skills, education or experience, make it active
+  }
+
+</script>
+
+<!--Script 1-->
+<script>
+
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu()
+  {
+    sidemenu.style.right = "0"; /*push menu to left*/
+  }
+
+  function closemenu()
+  {
+    sidemenu.style.right = "-200px"; /*push menu to left*/
+  }
+  
+</script>
+
+<!--Contact Form Script-->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzKp0yBvERWVm9HIdPaHBHOIrZYuWJEfXqwP4thrE6y6KeDFaRwnjMv6ryCiLai9Nad0A/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    //message sent, message: remove after 5s
+      .then(response => {
+        msg.innerHTML = "Message Sent Succesfully"
+        setTimeout(function(){ msg.innerHTML = "" }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>

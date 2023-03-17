@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roman Hudaj Portoflio</title>
+  <link rel="stylesheet" href="art-style.css">    <!--Reference to CSS script-->
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>   <!--Font from web-->
+</head>
+<body>
+
+<!-- -----------Menu----------- -->
+<div class="container">
+  <!--Nav Bar-->
+  <nav>
+    <!--Name/Logo-->
+      <img src="images/logo.png" class="logo">
+    <!--Menu-->
+    <ul id="sidemenu">
+      <!--Home Page-->
+        <li><a href="index.html">Home</a></li>
+      <!--Art Page-->
+        <li><a href="art.html">Art</a></li>
+      <!--Projects Page-->
+        <li><a href="projects.html">Projects</a></li>
+      <!--Menu Open/close-->
+        <i class="fas fa-times" onclick="closemenu()"></i> <!--X icon-->
+    </ul>
+    <!--Menu Open/close-->
+    <i class="fas fa-bars" onclick="openmenu()"></i>    <!--menu icon-->
+  </nav>
+</div>
+
+
+<!-- -----------Header----------- -->
+  <div class="container">
+    <div class="header-text">
+      <h1>My Artwork</h1>
+      <p>I have a passion for digital art and photography. Here are some samples of my work!</p>
+    </div>
+  </div>
+
+
+<!-- -----------3D WORK----------- -->
+<div id="work-3d">
+
+  <div class="container">
+
+    <h1 class="sub-title"> <i class="fa-solid fa-cube"></i> 3D Work</h1>
+    <p>I do 3D animation, modelling and design in Blender</p>
+
+  </div>
+
+    <div class="container">
+      <div class="video-grid-1"> 
+
+        <!--Grid 1: stack of 2-->
+        <div class="video-grid-1-1">
+
+          <!--video 1-->
+            <div class="grid-1-item">
+              <video autoplay loop muted plays-inline> <source src="videos/video1.mp4"> </video>
+            </div>
+
+          <!--video 3-->
+            <div class="grid-1-item">
+              <video autoplay loop muted plays-inline> <source src="videos/video3.mp4"> </video>
+            </div>
+
+        </div>
+
+        <!--video 7-->
+        <video autoplay loop muted plays-inline> <source src="videos/video7.mp4"> </video>
+
+    </div>
+
+      <div class="video-grid-2">
+        <!--video 5-->
+          <video autoplay loop muted plays-inline> <source src="videos/video5.mp4"> </video>
+        <!--video 7-->
+          <video autoplay loop muted plays-inline> <source src="videos/video6.mp4"> </video>
+      </div>
+
+      <div class="video-grid-3">
+
+        <!--video 2-->
+        <video autoplay loop muted plays-inline> <source src="videos/video2.mp4"> </video>
+
+        <div class="video-grid-3-1">
+
+          <!--video 4-->
+          <div class="grid-1-item"> <video autoplay loop muted plays-inline> <source src="videos/video4.mp4"> </video> </div>
+
+          <!--video 8-->
+          <video autoplay loop muted plays-inline> <source src="videos/video8.mp4"> </video>
+
+        </div>
+        
+      </div>
+
+  </div>
+  </div>
+
+</div>
+
+
+
+
+
+<!--Script: Menu Shrink-->
+<script>
+
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu()
+  {
+    sidemenu.style.right = "0"; /*push menu to left*/
+  }
+
+  function closemenu()
+  {
+    sidemenu.style.right = "-200px"; /*push menu to left*/
+  }
+  
+</script>
+
+</body>
+</html>
