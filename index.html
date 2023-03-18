@@ -86,7 +86,7 @@
   </div>
 </div>
 
-<!-- -----------Portfolio----------- -->
+<!-- -----------My Work----------- -->
 <div id="portfolio">
 
   <div class="container">
@@ -101,7 +101,7 @@
         <div class="layer">
           <h3>Social Media App</h3>
           <p>App does this function</p>
-          <a href="#"> <i class="fa-solid fa-link"></i> </a>
+          <a href="projects.html"> <i class="fa-solid fa-link"></i> </a>
         </div>
       </div>
 
@@ -111,7 +111,7 @@
         <div class="layer">
           <h3>Social Media App</h3>
           <p>App does this function</p>
-          <a href="#"> <i class="fa-solid fa-link"></i> </a>
+          <a href="projects.html"> <i class="fa-solid fa-link"></i> </a>
         </div>
       </div>
 
@@ -121,7 +121,7 @@
         <div class="layer">
           <h3>Social Media App</h3>
           <p>App does this function</p>
-          <a href="#"> <i class="fa-solid fa-link"></i> </a>
+          <a href="art.html"> <i class="fa-solid fa-link"></i> </a>
         </div>
       </div>
 
@@ -167,7 +167,7 @@
         </form>
 
         <!--Display Message-->
-        <span id="msg">Your message has been sent</span>
+        <span id="msg"></span>
 
       </div>
 
@@ -228,12 +228,14 @@
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
     //message sent, message: remove after 5s
       .then(response => {
         msg.innerHTML = "Message Sent Succesfully"
         setTimeout(function(){ msg.innerHTML = "" }, 5000)
         form.reset()
       })
+
       .catch(error => console.error('Error!', error.message))
   })
 </script>
