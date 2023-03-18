@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roman Hudaj Portoflio</title>
+  <link rel="stylesheet" href="school.css">    <!--Reference to CSS script-->
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>   <!--Font from web-->
+</head>
+<body>
+
+<!-- -----------Home----------- -->
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="images/logo.png" class="logo">
+
+      <!--Menu-->
+      <ul id="sidemenu">
+
+        <!--Home Page-->
+          <li><a href="index.html">Home</a></li>
+        <!--Art Page-->
+          <li><a href="art.html">Art</a></li>
+        <!--Projects Page-->
+          <li><a href="projects.html">Projects</a></li>
+        <!--School Page-->
+          <li><a href="school.html">School</a></li>
+
+        <i class="fas fa-times" onclick="closemenu()"></i> <!--X icon-->
+
+      </ul>
+
+      <i class="fas fa-bars" onclick="openmenu()"></i>    <!--menu icon-->
+
+    </nav>
+  </div>
+</div>
+
+<!-- -----------Services----------- -->
+<div id = "services">
+  <div class="container">
+
+    <h1 class="sub-title">My Courses</h1>
+
+    <div class="courses-list">     <!--Div's inside are a Grid-->
+      
+      <!--Grid Element 1-->
+      <div>
+        <i class="fa-solid fa-code"></i>    <!--Icon-->       
+        <h2>CS 246</h2>
+        <p>Object-Oriented Software Development</p>
+        <a href="#">See Notes</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--Script 1-->
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");    //get every element with class "tab-link"
+  var tabcontents = document.getElementsByClassName("tab-contents");  //get every element with class "tab-content"
+
+  function opentab(tabname)
+  {
+    for(tablink of tablinks)                //for every "tab-links" element
+    {
+      tablink.classList.remove("active-link");      //remove active-link
+    }
+    for(tabcontent of tabcontents)           //for every "tab-contents" element
+    {
+      tabcontent.classList.remove("active-tab");    //remove active-tab
+    }
+
+    event.currentTarget.classList.add("active-link");  //adds active link on a click
+
+    document.getElementById(tabname).classList.add("active-tab");     //tabname = skills, education or experience, make it active
+  }
+
+</script>
+
+<!--Script 1-->
+<script>
+
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu()
+  {
+    sidemenu.style.right = "0"; /*push menu to left*/
+  }
+
+  function closemenu()
+  {
+    sidemenu.style.right = "-200px"; /*push menu to left*/
+  }
+  
+</script>
+
+</body>
+</html>
