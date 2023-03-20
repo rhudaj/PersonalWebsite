@@ -10,11 +10,8 @@ In the process, I gained experience with HTML, CSS & Javascript.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+![alt text](readme-assets/images/img1.png)
 
-    ```md
-    ![alt text](readme-assets/images/img1.png)
-    ```
 
 ## Credits
 
