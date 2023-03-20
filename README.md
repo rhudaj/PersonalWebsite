@@ -9,6 +9,8 @@ I built a Personal Website to showcase my skills, experience and cool projects.
 In the process, I gained experience with HTML, CSS & Javascript. 
 
 ## Usage
+  
+The site is simple and straightforward to use. Simply visit [roman-hudaj.com](http://roman-hudaj.com). There you will be on the home page shown below. After which, you can scroll and visit other pages by clicking on the menu items. 
 
 ![alt text](readme-assets/img1.png)
 
