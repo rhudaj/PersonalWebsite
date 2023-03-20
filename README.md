@@ -17,11 +17,8 @@ The site is simple and straightforward to use. Simply visit [roman-hudaj.com](ht
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+Tutorials I followed: 
+- [Complete Responsive Personal Portfolio Website using HTML CSS & JavaScript](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=&cad=rja&uact=8&ved=2ahUKEwimxN7mhev9AhVsk2oFHVluCiwQtwJ6BAgIEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dtcskp-ncN0I&usg=AOvVaw11lxKU2qeWqbN4lyywvs4l)
 
 ## License
 
