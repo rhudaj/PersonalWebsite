@@ -1,68 +1,47 @@
-  .container
-  {
-    padding: 10px 10%;
-  }
+/*Header-Video*/
 
-/*Menu Bar*/
-  nav
-  {
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .logo
-  {
-    width: 200px;
-  }
-  nav ul li
-  {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px; 
-  }
-  nav ul li a
-  {
-    color: #fff; 
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-  }
-  nav ul li a::after
-  {
-    content: '';
-    width: 0;
-    height: 3px; 
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px; 
-    transition: 0.5s;
-  }
-  nav ul li a:hover::after
-  {
-    width: 100%; 
-  }
+#header-video 
+{
+  position: relative;
+  margin-bottom: 100px;
+}
+#video1 
+{ 
+  width: 100%;
+  margin: auto; 
+  display: block;
+  border-radius: 5px;
+}
 
-/*Header*/
+#videoMessage 
+{ 
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: left; 
+  width: 100%;
+  height: 100%;
+}
 
-  .header-text
-  {
-    font-size: 30px;
-    margin-bottom: 50px;
-  }
+#videoMessage h1
+{
+  font-size: 60px;
+  margin-bottom: 40px;
+}
 
-  .header-text h1
-  {
-    font-size: 60px;
-    margin-top: 20px;
-  }
+#videoMessage h1 span
+{
+  color: #ff004f;
+}
 
-  .header-text p
-  {
-    margin-top: 20px;
-    font-size: 25px;
-  }
+#videoMessage p
+{
+  font-size: 25px;
+}
+
 
 /*-----------3d-work-----------*/
 
@@ -77,12 +56,12 @@
     margin-bottom: 20px;
   }
 
-  #work-3d .container p
+  #work-3d p
   {
     font-size: 25px;
   }
 
-  video
+  #work-3d video
   {
     width: 100%;
     border-radius: 10px;
@@ -130,7 +109,7 @@
     }
 
 
-  video:hover
+  #work-3d video:hover
   {
     transform: scale(1.1);
     border-style: outset;
