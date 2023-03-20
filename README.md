@@ -10,7 +10,7 @@ In the process, I gained experience with HTML, CSS & Javascript.
 
 ## Usage
 
-![alt text](readme-assets/images/img1.png)
+![alt text](readme-assets/img1.png)
 
 
 ## Credits
