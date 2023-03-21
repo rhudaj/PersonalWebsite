@@ -42,6 +42,26 @@
   font-size: 25px;
 }
 
+/*Section Headers*/
+
+  .section-header
+  {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .section-header .sub-title
+  {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .section-header p
+  {
+    font-size: 25px;
+  }
+
+/*Section Headers*/
 
 /*-----------3d-work-----------*/
 
@@ -50,22 +70,10 @@
     padding: 50px, 0;
   }
 
-  #work-3d .sub-title
-  {
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
-
-  #work-3d p
-  {
-    font-size: 25px;
-  }
-
   #work-3d video
   {
     width: 100%;
     border-radius: 10px;
-
     transition: transform .5s;
   }
 
@@ -111,6 +119,60 @@
 
   #work-3d video:hover
   {
-    transform: scale(1.1);
-    border-style: outset;
+    transform: scale(1.05);
+    border-style:solid; 
+    border-color: #fff;
+    border-width: 2px;
   }
+
+/*Photography*/
+
+.photo {
+  border-radius: 10px;
+  filter: grayscale(50%);
+  transition:all 0.3s;
+}
+
+.photo:hover {
+  transform: scale(1.01);
+  filter:none;
+}
+
+
+.photo-grid  {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 33%; 
+  padding: 0 5px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1400px) 
+{
+  .column 
+  {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column 
+  {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
