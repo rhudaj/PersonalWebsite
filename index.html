@@ -28,23 +28,26 @@
       <ul id="sidemenu">
 
         <!--Home Page-->
-          <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <!--Art Page-->
           <li><a href="art.html">Art</a></li>
         <!--School Page-->
           <li><a href="school.html">School</a></li>
+        <!--Projects Page-->
+          <li><a href="projects.html">Projects</a></li>
 
         <i class="fas fa-times" onclick="closemenu()"></i> <!--X icon-->
 
       </ul>
 
-      <i class="fa fa-bars" onclick="openmenu()"></i>    <!--menu icon-->
+      <i id="menu-icon" class="fa fa-bars" onclick="openmenu()"></i>    <!--menu icon (for small screens)-->
 
     </nav>
     <div class="header-text">
       <p>CS Student and Creator</p>
       <h1>Hello, I'm <span>Roman</span> <br> Hudaj From Toronto</h1>
     </div>
+    
   </div>
 </div>
 
@@ -209,7 +212,7 @@
 
 </script>
 
-<!--Script 1-->
+<!--Menu-->
 <script>
 
   var sidemenu = document.getElementById("sidemenu");

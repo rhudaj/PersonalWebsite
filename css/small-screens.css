@@ -22,6 +22,12 @@ nav .fas
     font-size: 30px;
   }
   /*menu*/
+
+  #menu-icon
+  {
+    display: block;
+  }
+
   nav .fas
   {
     display: block;
@@ -51,7 +57,7 @@ nav .fas
     top: 25px;
     left: 25px;
   }
-  /*About me*/
+  /*-------------------About me-------------------*/
   .sub-title
   {
     font-size: 40px;
@@ -73,7 +79,8 @@ nav .fas
     font-size: 16px;
     margin-right: 20px;
   }
-  /*contact*/
+
+/*-------------------contact-------------------*/
   .contact-left, .contact-right
   {
     flex-basis: 100%;

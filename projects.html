@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roman Hudaj Portoflio</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/projects.css">    <!--Reference to CSS script-->
+  <link rel="stylesheet" href="css/small-screens.css">   
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>   <!--Font from web-->
+</head>
+<body>
+
+<!-- -----------Menu----------- -->
+<div class="container">
+  <!--Nav Bar-->
+  <nav>
+    <!--Name/Logo-->
+      <img src="images/logo.png" class="logo">
+    <!--Menu-->
+    <ul id="sidemenu">
+      <!--Home Page-->
+      <li><a href="index.html">Home</a></li>
+      <!--Art Page-->
+        <li><a href="art.html">Art</a></li>
+      <!--School Page-->
+        <li><a href="school.html">School</a></li>
+      <!--Projects Page-->
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+    <!--Menu Open/close-->
+    <i class="fas fa-bars" onclick="openmenu()"></i>    <!--menu icon-->
+  </nav>
+</div>
+
+
+<!-- -----------Header----------- -->
+  <div id="header-video"> 
+    <video id="video1" preload autoplay muted playsinline loop> <source src="other-videos/snake.mp4" type="video/mp4"> </video> 
+    <div id="videoMessage" class="container">
+      <h1>My <span>Projects</span> </h1>
+    </div>
+  </div>
+<!-- -----------Header----------- -->
+
+
+<!-- -----------3D WORK----------- -->
+<div id="projects" class="container">
+
+  <div class="project" id="p1" >
+    <div class="project-header">
+      <h1 class="sub-title">CHESS</h1>
+      <p>C++</p>
+    </div>
+    <div class="content">
+      
+    </div>
+  </div>
+
+  <div class="project" id="p2" >
+    <div class="project-header">
+      <h1 class="sub-title">C-Compiler</h1>
+      <p>C++</p>
+    </div>
+  </div>
+
+
+  <div class="project" id="p3" >
+    <div class="project-header">
+      <h1 class="sub-title">Note-Taking App</h1>
+      <p>React.js, Javascript, Html, </p>
+    </div>
+  </div>
+
+</div>
+
+  
+</div>
+
+
+<!--------------------------Scripts---------------------------->
+
+<!--Script: Menu Shrink-->
+<script>
+
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu()
+  {
+    sidemenu.style.right = "0"; /*push menu to left*/
+  }
+
+  function closemenu()
+  {
+    sidemenu.style.right = "-200px"; /*push menu to left*/
+  }
+  
+</script>
+
+</body>
+</html>
