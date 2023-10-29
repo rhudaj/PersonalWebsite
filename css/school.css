@@ -1,70 +1,61 @@
 /* -----------My Courses----------- */
 
-#courses
-{
+#courses {
   padding: 30px 0;
 }
-.courses-list
-{
+
+.courses-list {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(1fr, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
 
-  /*Grid Divs*/
-  .course
-  {
-    display: grid;
-    grid-template-columns: 95% 10%;
+/*Grid Divs*/
+.course {
+  display: grid;
+  grid-template-columns: 95% 10%;
 
-    background: #262626;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
+  background: #262626;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
 
-    padding: 20px;
-  }
+  padding: 20px;
+}
 
-  .course .icon-text
-  {
-    display: grid;
-    grid-template-columns: 50px 150px; 
-    column-gap: 0px;
-  }
+.course .icon-text {
+  display: grid;
+  grid-template-columns: 50px 150px;
+  column-gap: 0px;
+}
 
-  /*Icons*/
-  .icon-text i
-  {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
+/*Icons*/
+.icon-text i {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 
-  .icon-text .course-title
-  {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-  }
+.icon-text .course-title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
 
-  .course > a i
-  {
-    color: #fff;
-    font-size: 50px;
+.course > a i {
+  color: #fff;
+  font-size: 30px;
+  transition: 0.5s;
+}
 
-    transition: 0.5s;
-  }
+.course > a i:hover {
+  color: #262626;
+  font-size: 60px;
+  cursor: pointer;
+}
 
-  .course > a i:hover
-  {
-    color:#262626;
-    font-size: 60px;
-    cursor: pointer;
-  }
-
-  .courses-list .course:hover
-  {
-    background: #ff004f;
-    transform: translateY(-10px); /*move up*/
-  }
+.courses-list .course:hover {
+  background: #ff004f;
+  transform: translateY(-10px); /*move up*/
+}
